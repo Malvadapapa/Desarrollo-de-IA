@@ -3,7 +3,11 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.6%2B-F7931E.svg)](https://scikit-learn.org/)
 [![Status](https://img.shields.io/badge/Evaluaci%C3%B3n-Evidencias%201%2C%202%20y%203-brightgreen.svg)]()
+[![Vercel Live](https://img.shields.io/badge/Vercel-Producci%C3%B3n%20Live-black?logo=vercel)](https://desarrollo-de-ia.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
+
+> 🚀 **Demostración Interactiva en Producción (Vercel Serverless):**  
+> 👉 **[https://desarrollo-de-ia.vercel.app/](https://desarrollo-de-ia.vercel.app/)**
 
 Repositorio oficial del espacio curricular **Desarrollo de Inteligencia Artificial** correspondiente a la **Tecnicatura Superior en Desarrollo de Software** del **Instituto Superior Politécnico Córdoba (ISPC)**.
 
@@ -141,13 +145,13 @@ Las variables geométricas explican conjuntamente más del **$72\%$** del costo 
 
 El pipeline ganador fue exportado a disco en [`models/best_model.joblib`](models/best_model.joblib). El artefacto es completamente autónomo y no requiere ingeniería de variables manual externa.
 
-### 1. Interfaz Web Interactiva (`demo_app/`)
-Se desarrolló una landing page moderna en Vanilla CSS/JS con backend REST en Python:
-
-```powershell
-py -3.14 demo_app/server.py
-```
-Abrir en el navegador: 👉 **`http://localhost:8000`**
+### 1. Despliegue en la Nube (Vercel Serverless) y Demo Local
+* 🌐 **Producción Live (Vercel):** 👉 **[https://desarrollo-de-ia.vercel.app/](https://desarrollo-de-ia.vercel.app/)**
+* 💻 **Ejecución local desacoplada:**
+  ```powershell
+  py -3.14 demo_app/server.py
+  ```
+  Abrir en el navegador local: 👉 **`http://localhost:8000`**
 
 ### 2. Inferencia Individual por Consola (CLI)
 Mediante el script [`src/predict.py`](src/predict.py):
